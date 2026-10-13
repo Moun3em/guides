@@ -1,0 +1,121 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Branded HTML Team Emails with ChatGPT — Free Step-by-Step Guide</title><meta name=description content="Free step-by-step guide by Mounaim Lamouni: branded HTML team emails with free ChatGPT, sent from Gmail or Outlook."><style>body{margin:0;font-family:Inter,Arial,sans-serif;background:#F4EDE1;color:#1b2430;line-height:1.6}
+header{background:#0B1A2E;color:#F4EDE1;padding:48px 24px 44px;text-align:center}
+header small{letter-spacing:.15em;text-transform:uppercase;color:#D9C3A0;font-size:13px}
+header h1{margin:12px auto 0;max-width:760px;font-size:34px;line-height:1.2}
+main{max-width:760px;margin:-20px auto 40px;background:#fff;padding:36px 40px;border-radius:14px}
+h2{color:#0B1A2E;border-bottom:3px solid #D9C3A0;padding-bottom:6px;margin-top:36px;page-break-after:avoid}h3{color:#0B1A2E}
+pre{background:#0B1A2E;color:#F4EDE1;padding:16px;border-radius:10px;white-space:pre-wrap;font-size:14px;page-break-inside:avoid}
+code{font-family:Menlo,Consolas,monospace}p code,li code{background:#F4EDE1;padding:1px 5px;border-radius:4px}
+a{color:#0B1A2E;font-weight:700}
+.cta{background:#0B1A2E;color:#F4EDE1;padding:24px;border-radius:12px;text-align:center;font-size:19px;margin-top:20px}.cta a{color:#D9C3A0}
+footer{text-align:center;color:#6b6b6b;font-size:13px;padding-bottom:30px}
+@media print{body{background:#fff}main{margin:0 auto;padding:10px 0}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}pre,.cta{-webkit-print-color-adjust:exact;print-color-adjust:exact}.pdfonly{display:none}}</style></head><body><header><small>Mounaim Lamouni · Practical AI for teams</small><h1>Branded HTML Team Emails with ChatGPT — Free Step-by-Step Guide</h1></header><main><p>Hi, I'm Mounaim. In the video I turned a boring plain-text announcement into an email that looks like a design team made it. Free ChatGPT, no code, about a minute.</p>
+<p>This guide is the full version, so you can do it yourself today. Al Noor Logistics is just an example company. Swap in your own.</p>
+<h2>What you need</h2>
+<ul>
+<li>ChatGPT. The free version works. Claude or Gemini work too.</li>
+<li>Your brand colour as a hex code, for example #0F766E. Ask your marketing person, or check your website.</li>
+<li>Optional: a public link to your logo (more on that below).</li>
+<li>Gmail or Outlook to send it.</li>
+<li>Five minutes.</li>
+</ul>
+<h2>Step 1. Copy this prompt</h2>
+<p>Copy it, paste it into ChatGPT, and change the parts in [brackets].</p>
+<pre><code>You are an email designer. Create an HTML internal announcement email for [Company name].
+
+Topic: [our new flexible working policy starts 1 November].
+Audience: [all employees]. Tone: warm, clear, short.
+
+Design:
+- Brand colour [#0F766E] for the header and the button. White background, dark grey text.
+- Header with the company name [and this logo: LOGO URL].
+- Three short sections with headings: [What's changing], [Who it applies to], [What to do next].
+- One button: [Read the policy] linking to [URL].
+- A short footer: [HR team, Company name].
+
+Technical rules (important, so it survives being pasted into Gmail or Outlook):
+- Table-based layout, 600px wide, centred.
+- Inline CSS only. No &lt;style&gt; block, no JavaScript, no external fonts, no background images.
+- Use web-safe fonts: Arial, Helvetica, sans-serif.
+- The button must be a table cell with a background colour and a link inside, not an image.
+
+Reply with the complete HTML code only, in one code block.
+</code></pre>
+<p>Why these rules? Email apps strip a lot of normal web code. Tables and inline CSS are the old-school way that still works everywhere. You don't need to understand the code. Think of it like a recipe: you don't eat the recipe, you eat the dish.</p>
+<h2>Step 2. Variations you can reuse</h2>
+<p>Keep the "Design" and "Technical rules" parts from the prompt above, and only replace the first lines.</p>
+<p><strong>Monthly newsletter</strong></p>
+<pre><code>Create an HTML monthly team newsletter for [Company name], [Month]. Sections: a short welcome from [name], 3 team highlights, 1 upcoming date, and &quot;a tip of the month&quot;. Keep each section under 50 words.
+</code></pre>
+<p><strong>Policy update</strong></p>
+<pre><code>Create an HTML policy update email for [Company name]. Policy: [name]. Explain what changes, from which date, who it affects, and where to ask questions. Plain English, no legal wording. Button: [Read the full policy].
+</code></pre>
+<p><strong>Welcome email for a new joiner</strong></p>
+<pre><code>Create an HTML welcome email for [new joiner name], joining [team] at [Company name] on [date]. Include: a warm welcome, what their first day looks like, who their buddy is, and what to bring. Button: [Open your onboarding checklist].
+</code></pre>
+<p><strong>Event invite</strong></p>
+<pre><code>Create an HTML event invitation for [Company name]: [event name] on [date] at [time], [location]. Include what it is, why to come, the agenda in 3 bullets, and an RSVP button linking to [URL]. Add a line for dietary requirements.
+</code></pre>
+<p>Tip: after the first version, just talk to it. "Make the header shorter." "Add an Arabic version below the English one." "Make the button bigger." That's it.</p>
+<h2>Step 3. Preview it</h2>
+<p><strong>Option A: open it as a file (most reliable)</strong>
+1. In ChatGPT, click Copy on the code block.
+2. Open Notepad (Windows) or TextEdit (Mac; first go to Format → Make Plain Text).
+3. Paste, and save as <code>email.html</code>. Make sure it ends in .html, not .txt.
+4. Double-click the file. It opens in your browser and you see the designed email.</p>
+<p><strong>Option B: an online HTML viewer</strong>
+Paste the code into any free online HTML viewer (search "HTML viewer online") and look at the preview. Please don't paste anything confidential into online tools. For internal policies, use Option A.</p>
+<p><strong>Option C: ChatGPT canvas or preview</strong>
+Sometimes ChatGPT shows a preview button on the code. Handy, but always check it in the browser too.</p>
+<h2>Step 4. Send it</h2>
+<h3>Gmail (Chrome works best)</h3>
+<ol>
+<li>Open your <code>email.html</code> in Chrome.</li>
+<li>Click anywhere on the email, press Ctrl+A (Cmd+A on Mac) to select everything, then Ctrl+C to copy.</li>
+<li>In Gmail, click Compose and paste with Ctrl+V into the message body. The colours, sections and button come with it.</li>
+<li>Add the subject and recipients. Send it to yourself first.</li>
+<li>Open the test email on your phone and on your laptop. Check the button link.</li>
+</ol>
+<p>If the layout looks off after pasting: ask ChatGPT to "make it simpler: one column, tables only, no margins on outer elements". Paste-in works best with simple designs.</p>
+<h3>Outlook (desktop app, Windows)</h3>
+<ol>
+<li>Open <code>email.html</code> in your browser, select all, copy.</li>
+<li>In Outlook, create a New Email and paste into the body. Outlook keeps most of the design.</li>
+<li>Another way that also works: in Outlook desktop, go to Insert → Attach File → choose <code>email.html</code> → click the small arrow → "Insert as Text". The HTML becomes the email body.</li>
+<li>Send a test to yourself first. Outlook on Windows is the strictest email app, so if something looks wrong, tell ChatGPT: "Make this Outlook-safe".</li>
+</ol>
+<h3>Outlook on the web / new Outlook</h3>
+<p>Use the same copy-and-paste from the browser method as Gmail.</p>
+<h2>Brand tips</h2>
+<ul>
+<li><strong>Colours:</strong> use one main brand colour plus white and dark grey. One accent is enough. Always give the hex code, never "our blue".</li>
+<li><strong>Logo:</strong> the logo must be a public image link (ending in .png or .jpg), for example the logo on your company website. Right-click the logo on your site → "Copy image address", and put that link in the prompt. A logo saved on your laptop will not show up for the people you send it to.</li>
+<li><strong>Logo size:</strong> ask for "logo max 160px wide". Huge logos look bad on phones.</li>
+<li><strong>Consistency:</strong> once you love one design, save the HTML. Next month, give it back to ChatGPT and say "same design, new content: …". Now you have a template.</li>
+<li><strong>Language:</strong> for UAE and GCC teams, you can ask for English and Arabic in the same email. Ask for the Arabic section to be "right-to-left (dir=rtl)".</li>
+</ul>
+<h2>Common mistakes</h2>
+<ol>
+<li><strong>Pasting the code itself into Gmail.</strong> You'll see a wall of code. Open the file in a browser first, then copy what you see.</li>
+<li><strong>Saving as .txt.</strong> The file must end in .html.</li>
+<li><strong>Logo from your laptop.</strong> Use a public link instead.</li>
+<li><strong>Not testing.</strong> Always send to yourself first, and open it on your phone.</li>
+<li><strong>Trusting the details blindly.</strong> AI can get dates, names and links wrong. You stay on top of AI: check every date, name and link before you hit send.</li>
+<li><strong>Too much content.</strong> If it needs scrolling for a minute, nobody reads it. Three short sections and one button.</li>
+<li><strong>Confidential info in random online tools.</strong> Keep sensitive content in a file on your computer.</li>
+</ol>
+<h2>Checklist before you send</h2>
+<ul>
+<li>☐ Brand colour hex code is correct</li>
+<li>☐ Logo shows (public link)</li>
+<li>☐ Dates, names and numbers checked by a human</li>
+<li>☐ Button link works</li>
+<li>☐ Test email sent to myself</li>
+<li>☐ Checked on phone and laptop</li>
+<li>☐ Subject line is clear (what + when)</li>
+<li>☐ Saved the HTML as a template for next time</li>
+</ul>
+<h2>Need help?</h2>
+<p>This is one small use case. The real win is when your whole team uses AI like this in their daily work.</p>
+<div class='cta'><strong>Need help rolling AI out in your team? Email me: <a href='mailto:hello@monipathos.com'>hello@monipathos.com</a></strong></div>
+<p>— Mounaim Lamouni</p><p class=pdfonly style="margin-top:28px"><a href="guide.pdf">Download this guide as a PDF</a></p></main><footer>© 2026 Mounaim Lamouni · Example company names are fictional.</footer></body></html>
